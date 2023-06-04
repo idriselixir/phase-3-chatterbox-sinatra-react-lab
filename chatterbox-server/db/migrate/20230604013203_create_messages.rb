@@ -1,0 +1,10 @@
+# db/migrate/timestamp_create_messages.rb
+class CreateMessages < ActiveRecord::Migration[6.1]
+  def change
+    create_table :messages do |t|
+      t.string :body
+      t.string :username
+      t.timestamps
+    end
+  end
+end
